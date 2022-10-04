@@ -10,7 +10,7 @@ export default function Navbar() {
                 <CustomLink to="/catalogPage">Catalog</CustomLink>
                 <CustomLink to="/cartPage">Cart</CustomLink>
                 <CustomLink to="/logPage">Login/Logout</CustomLink>
-                <CustomLink to="/userPage">User</CustomLink>
+                <CustomLink to="/preferences">User</CustomLink>
             </ul>
         </nav>
     )

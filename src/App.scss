@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+
 }
 
 .App-logo {
@@ -39,11 +40,15 @@
 .site-title {
 
 }
-ul {
-  display: flex;
-  justify-content: space-between;
-  a{
-    color: black;
-    text-decoration: none;
+.nav {
+  max-width: 1140px;
+  margin: 0 auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    a {
+      color: black;
+      text-decoration: none;
+    }
   }
 }

@@ -5,8 +5,10 @@ import CatalogOnMainPage from "../components/CatalogOnMainPage";
 const HomePage = () => {
     return (
         <div>
-            <h1 className="main_title">Fish Store</h1>
-            <p>fresh fish for you</p>
+            <div className="mainSec">
+                <h1 className="mainTitle">fishStore</h1>
+                <p className="mainDesc">fresh fish for you</p>
+            </div>
             <CatalogOnMainPage/>
         </div>
     );
