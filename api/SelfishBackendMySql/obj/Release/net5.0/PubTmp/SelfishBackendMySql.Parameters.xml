@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Default Web Site/Sellfish" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\User\\source\\repos\\Sellfish\\SelfishBackendMySql\\SelfishBackendMySql\\obj\\Release\\net5\.0\\PubTmp\\Out\\$" />
+  </parameter>
+  <parameter name="AzureContext.sellfish_dbContext" description="" value="Server=mbn.database.windows.net;Database=sellfish_db;user Id=admin_mbn;Password=root1234567890!;" tags="dbfullsql">
+    <parameterEntry kind="ProviderPath" scope="dbfullsql" match="^C:\\Users\\User\\source\\repos\\Sellfish\\SelfishBackendMySql\\SelfishBackendMySql\\obj\\Release\\net5\.0\\PubTmp\\EFSQLScripts\\AzureContext\.sellfish_dbContext\.sql$" />
+  </parameter>
+</parameters>

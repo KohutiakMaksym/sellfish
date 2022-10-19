@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\User\Desktop\SELLFISHPUBLISH</_PublishTargetUrl>
+    <History>True|2022-10-12T23:06:34.0582557Z;True|2022-10-13T00:31:56.4136201+02:00;True|2022-10-13T00:29:35.5457597+02:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=mbn.database.windows.net%3bDatabase=sellfish_db%3buser Id=admin_mbn%3bPassword=root1234567890!%3b</Value>
+    </DestinationConnectionStrings>
+    <DestinationConnectionStrings Include="NotDefaultConnection">
+      <Value>Server=mbn.database.windows.net%3bDatabase=sellfish_db%3buser Id=admin_mbn%3bPassword=root1234567890!%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="AzureContext.sellfish_dbContext">
+      <Value>Server=mbn.database.windows.net%3bDatabase=sellfish_db%3buser Id=admin_mbn%3bPassword=root1234567890!%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

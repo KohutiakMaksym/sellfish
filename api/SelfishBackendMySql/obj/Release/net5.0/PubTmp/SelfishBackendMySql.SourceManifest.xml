@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="C:\Users\User\source\repos\Sellfish\SelfishBackendMySql\SelfishBackendMySql\obj\Release\net5.0\PubTmp\Out\" />
+  <dbfullsql path="C:\Users\User\source\repos\Sellfish\SelfishBackendMySql\SelfishBackendMySql\obj\Release\net5.0\PubTmp\EFSQLScripts\AzureContext.sellfish_dbContext.sql" />
+</sitemanifest>
