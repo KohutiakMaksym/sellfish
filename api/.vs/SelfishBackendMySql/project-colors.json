@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "32f3cfee-1452-46d1-88e3-73d0e2f76014": {
+      "ProjectGuid": "32f3cfee-1452-46d1-88e3-73d0e2f76014",
+      "DisplayName": "SelfishBackendMySql",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "75b119f8-5f5e-4c0a-a0dd-7ab6bfd36713": {
+      "ProjectGuid": "75b119f8-5f5e-4c0a-a0dd-7ab6bfd36713",
+      "DisplayName": "DataAccess",
+      "ColorIndex": 1
+    },
+    "c520c8be-33e4-4b8b-957b-145fd0c0ab45": {
+      "ProjectGuid": "c520c8be-33e4-4b8b-957b-145fd0c0ab45",
+      "DisplayName": "DataAccess",
+      "ColorIndex": 2
+    },
+    "0109e214-4be4-45d1-af0c-057974d0f6ff": {
+      "ProjectGuid": "0109e214-4be4-45d1-af0c-057974d0f6ff",
+      "DisplayName": "AzureContext",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
