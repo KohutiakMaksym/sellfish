@@ -33,7 +33,6 @@ namespace SelfishBackendMySql.Controllers
             try
             {   
                 return Ok(_context.Users.ToArray());
-
             }
             catch (Exception)
             {

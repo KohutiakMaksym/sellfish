@@ -14,6 +14,5 @@ namespace SelfishBackendMySql.DTO
         public int FishAmount { get; set; }
         public double FishPrice { get; set; }
         public string Description { get; set; }
-            
     }
 }

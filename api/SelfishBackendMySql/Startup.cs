@@ -20,6 +20,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Newtonsoft;
 using System.Text.Json.Serialization;
+using Newtonsoft;
 
 namespace SelfishBackendMySql
 {
@@ -45,18 +46,12 @@ namespace SelfishBackendMySql
             services.AddScoped<ICommentRepository, CommentRepository>();
             services.AddScoped<ILocationRepository, LocationRepository>();
 
-            services.AddControllers().AddJsonOptions(x =>
-    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
-
-
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "SelfishBackendMySql", Version = "v1" });
             });
-
         
             services.AddDbContext<sellfish_dbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("NotDefaultConnection")));
 
@@ -66,8 +61,11 @@ namespace SelfishBackendMySql
                 o.MultipartBodyLengthLimit = int.MaxValue;
                 o.MemoryBufferThreshold = int.MaxValue;
             });
-               
-        
+
+            services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
         }
 
 
