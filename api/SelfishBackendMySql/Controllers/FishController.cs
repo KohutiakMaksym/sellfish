@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 using SelfishBackendMySql.DTO;
 using System;                                                                                     
 using System.Collections.Generic;
@@ -62,6 +63,7 @@ namespace SelfishBackend.Controllers
             {
                 return BadRequest(ModelState);
             }
+
             return Ok(fishs);
         }
 
@@ -111,35 +113,35 @@ namespace SelfishBackend.Controllers
             return Ok("Succesfully created");
         }
 
-        [HttpDelete("{Id}")]
-        public IActionResult Delete(int Id)
-        {
+        //[HttpDelete("{Id}")]
+        //public IActionResult Delete(int Id)
+        //{
 
-            var fishToDelete = _context.Fish.FirstOrDefault(o => o.Id == Id);
-            if (fishToDelete == null)
-            {
-                return NotFound("Object to delete is not in DB");
-            }
+        //    var fishToDelete = _context.Fish.FirstOrDefault(o => o.Id == Id);
+        //    if (fishToDelete == null)
+        //    {
+        //        return NotFound("Object to delete is not in DB");
+        //    }
 
-            _context.Fish.Remove(fishToDelete);
-            _context.SaveChanges();
+        //    _context.Fish.Remove(fishToDelete);
+        //    _context.SaveChanges();
 
-            return StatusCode(200);
-        }
+        //    return StatusCode(200);
+        //}
 
-        [HttpPut]
-        public IActionResult Put(int Id, Fish fish)
-        {
-            var fishToChange = _context.Fish.FirstOrDefault(o => o.Id == Id);
+        //[HttpPut]
+        //public IActionResult Put(int Id, Fish fish)
+        //{
+        //    var fishToChange = _context.Fish.FirstOrDefault(o => o.Id == Id);
 
-            if (fishToChange == null)
-            {
-                return NotFound("object to update is not in DB");
-            }
-            _context.SaveChanges();
+        //    if (fishToChange == null)
+        //    {
+        //        return NotFound("object to update is not in DB");
+        //    }
+        //    _context.SaveChanges();
 
-            return StatusCode(200);
-        }
+        //    return StatusCode(200);
+        //}
         [NonAction]
         public bool UploadBlob(IFormFile blob)
         {

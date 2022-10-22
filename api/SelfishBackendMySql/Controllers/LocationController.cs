@@ -3,9 +3,11 @@ using AzureContext;
 using DataAccess.Interfaces;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 using SelfishBackendMySql.DTO;
 using System.Collections.Generic;
 using System.Linq;
+
 
 namespace SelfishBackendMySql.Controllers
 {
@@ -33,14 +35,22 @@ namespace SelfishBackendMySql.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            var Comments = _mapper.Map<List<LocationDTO>>(_repository.GetManyLocation());
+            var locations = _mapper.Map<List<LocationDTO>>(_repository.GetManyLocation());
 
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            return Ok(Comments);
+            //Comments
+            //string json = JsonConvert.SerializeObject(Comments, Formatting.Indented);
+
+            //var json = config.Formatters.JsonFormatter;
+            //json.SerializerSettings.PreserveReferencesHandling = Newtonsoft.Json.PreserveReferencesHandling.None;
+
+            //Newtonsoft.Json.PreserveReferencesHandling.All;
+
+            return Ok(locations);
         }
 
         [HttpGet("{Id}")]

@@ -5803,11 +5803,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Sellfish\\SelfishBackendMySql\\AzureContext\\AzureContext.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\SellfishPublish\\sellfish1\\api\\AzureContext\\AzureContext.csproj",
       "projectName": "AzureContext",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Sellfish\\SelfishBackendMySql\\AzureContext\\AzureContext.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\SellfishPublish\\sellfish1\\api\\AzureContext\\AzureContext.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\Sellfish\\SelfishBackendMySql\\AzureContext\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\SellfishPublish\\sellfish1\\api\\AzureContext\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

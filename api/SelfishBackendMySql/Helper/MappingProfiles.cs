@@ -29,10 +29,9 @@ namespace SelfishBackendMySql.Helper
             CreateMap<CommentDTO, Comment>();
 
 
+
             //test
-
-
-
         }
+
     }
 }
