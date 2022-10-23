@@ -189,7 +189,6 @@ C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj\Debug\net5.0\scopedcss\bundle\SelfishBackendMySql.styles.css
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj\Debug\net5.0\staticwebassets\SelfishBackendMySql.StaticWebAssets.Manifest.cache
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj\Debug\net5.0\SelfishBackendMySql.RazorTargetAssemblyInfo.cache
-C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj\Debug\net5.0\SelfishBackendMySql.csproj.CopyComplete
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj\Debug\net5.0\SelfishBackendMySql.dll
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj\Debug\net5.0\ref\SelfishBackendMySql.dll
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj\Debug\net5.0\SelfishBackendMySql.pdb
