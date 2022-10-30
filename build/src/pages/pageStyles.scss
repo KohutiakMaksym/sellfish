@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+
+.mainSec {
+  min-height: 70vh;
+  margin-top: 240px;
+  .svg-art {
+    position: relative;
+    height: 331px;
+    width: 100%;
+    svg {
+      position: absolute;
+      top: -151px;
+      left: 0;
+    }
+  }
+}
+
+.mainTitle {
+  font-size: 80px;
+  font-family: 'Asap', sans-serif;
+}
+.mainDesc {
+  font-family: 'Asap', sans-serif;
+  font-size: 26px;
+}
