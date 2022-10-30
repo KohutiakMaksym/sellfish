@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
+
+.CatalogOnMainPage {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.catalogOnMainPage__title {
+  font-family: 'Asap', sans-serif;
+  font-weight: 700;
+  text-align: left;
+  font-size: 54px;
+}
+//=========================
+.productCard {
+  margin-top: 20px;
+  padding: 25px;
+  width: 354px;
+  height: 265px;
+  text-align: justify;
+  border-radius: 13px;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.07), 0 2px 14px rgba(0,0,0,0.03);
+}
+.productCard__title {
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+}
+.productCard__description {
+  margin-top: 10px;
+}
+.productCard__price {
+  margin: 2px 0 15px 0;
+  text-align: center;
+  span {
+
+  }
+}
+.productCard__buttons {
+  display: flex;
+  justify-content: center;
+}
+//=========================
+.catalogOnMainPage__cards {
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+//=========================
+.login {
+  margin: 150px auto 0;
+  padding: 25px;
+  width: 465px;
+  min-height: 400px;
+  border-radius: 13px;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.07), 0 2px 14px rgba(0,0,0,0.03);
+  .login__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #0E4DA4;
+    margin-top: 19px;
+    margin-bottom: 35px;
+  }
+  .loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login__inp {
+    outline: none;
+    padding: 12px 55px 12px 19px;
+    border: 1px #0E4DA4 solid;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    background-color: rgba(0,0,0,0);
+    &::placeholder {
+      letter-spacing: 0.1px;
+      font-size: 15px;
+      color: rgba(14,77,164,0.3);
+    }
+    &:focus {
+      outline: none;
+      border: 2px #0E4DA4 solid;
+    }
+    .login__inp2 {
+      margin-bottom: 23px !important;
+    }
+  }
+  .has-error {
+    border: 1px #F5000C solid;
+    &:focus {
+      outline: none;
+      border: 2px #F5000C solid;
+    }
+  }
+  .login__blueButton {
+    width: 192px;
+    height: 48px;
+    margin-right: 0;
+    margin-bottom: 6px;
+    font-size: 18px;
+    transition: background-color 250ms linear;
+    &:not(:disabled):hover {
+      color: #0e4da4;
+      background: rgba(0,0,0,0%);
+      cursor: pointer;
+    }
+    &:disabled {
+      background: rgba(14, 77, 164, 0.5);
+      border: none;
+      cursor: not-allowed;
+    }
+  }
+  li::marker {
+    content: "" !important;
+  }
+  .login__whiteButton {
+    color: rgba(14,77,164,0.3);
+    border: none;
+    margin: 0 auto;
+    background: rgba(0,0,0,0%);
+    width: 160px;
+    height: 39px;
+    font-size: 15px;
+    letter-spacing: 0.1px;
+    &:hover {
+      transition: background-color 100ms linear;
+      color: white;
+      background: #0E4DA4;
+      cursor: pointer;
+    }
+  }
+}
