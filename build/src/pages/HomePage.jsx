@@ -1,6 +1,6 @@
 import React from 'react';
 import "./pageStyles.scss"
-import CatalogOnMainPage from "../components/CatalogOnMainPage";
+import CatalogOnMainPage from "../components/Catalog/CatalogOnMainPage";
 
 const HomePage = () => {
     return (

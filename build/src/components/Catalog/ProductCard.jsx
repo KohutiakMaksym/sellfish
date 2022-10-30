@@ -1,7 +1,7 @@
 import React from 'react';
-import BlueButton from "./buttons/BlueButton";
-import WhiteButton from "./buttons/WhiteButton";
-import "./componentsStyles.scss"
+import BlueButton from "../buttons/BlueButton";
+import WhiteButton from "../buttons/WhiteButton";
+import "./catalogStyles.scss"
 
 const ProductCard = (props) => {
     /*

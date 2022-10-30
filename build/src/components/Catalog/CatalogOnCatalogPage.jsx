@@ -1,9 +1,8 @@
-// eslint-disable-next-line no-unused-vars
 import React, {useEffect, useState} from 'react';
 import ProductCard from "./ProductCard";
-import CatalogServices from "../services/CatalogServices";
+import CatalogServices from "../../services/CatalogServices";
 
-const CatalogOnMainPage = () => {
+const CatalogOnCatalogPage = () => {
     const [fishes, setFishes] = useState();
     async function getCatalog(){
         try {
@@ -18,9 +17,9 @@ const CatalogOnMainPage = () => {
 
     },[])
     return (
-        <div className="CatalogOnMainPage">
-            <h2 className="catalogOnMainPage__title">catalogue</h2>
-            <div className="catalogOnMainPage__cards">
+        <div className="CatalogOnCatalogPage">
+            <h2 className="CatalogOnCatalogPage__title">catalogue</h2>
+            <div className="CatalogOnCatalogPage__cards">
                 {fishes?.map(fish =>
                     <ProductCard key={fish.id} card={fish}/>
                 )}
@@ -30,4 +29,4 @@ const CatalogOnMainPage = () => {
     );
 };
 
-export default CatalogOnMainPage;
+export default CatalogOnCatalogPage;
