@@ -3,8 +3,6 @@ import {Link, useMatch, useResolvedPath} from "react-router-dom";
 import "../componentsStyles.scss";
 import "../buttons/buttonsStyles.scss";
 //import axios from "axios";
-import {Context} from "../../index";
-import store from "../../services/AuthService";
 //import { FormErrors } from './FormErrors';
 
 const LoginForm = () => {
@@ -27,9 +25,9 @@ const LoginForm = () => {
     }, [email, password])
 
     return (
-        <section>
+        <div className="login">
                     <p ref={errRef} className={errMsg ? "errmsg" : "offscreen"} aria-live="assertive">{errMsg}</p>
-                    <h2 className="login__title">Log In</h2>
+
                     <form className="loginForm">
                         <label htmlFor="username"></label>
                         <input
@@ -55,12 +53,12 @@ const LoginForm = () => {
                         />
                         <button
                             className="blueButton login__blueButton"
-                            onClick={() => store.login(email, password)}
+
                         >
                         Sign In
                         </button>
                     </form>
-                </section>
+                </div>
     )
 }
 

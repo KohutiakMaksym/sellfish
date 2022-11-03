@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;700&display=swap');
 //=========================
-.CatalogOnMainPage {
+.catalog {
   max-width: 1600px;
   margin: 0 auto;
 }
-.catalogOnMainPage__title {
+.catalog__title {
   font-family: 'Asap', sans-serif;
   font-weight: 700;
   text-align: left;
@@ -40,10 +40,20 @@
   justify-content: center;
 }
 //=========================
-.catalogOnMainPage__cards {
+.catalog__cards {
 
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+//=========================
+.buttonCard {
+  display: block;
+  margin-top: 20px;
+  width: 354px;
+  height: 265px;
+  border-radius: 13px;
+  box-shadow: 0 5px 14px rgba(0,0,0,0.07), 0 2px 14px rgba(0,0,0,0.03);
 
 }
