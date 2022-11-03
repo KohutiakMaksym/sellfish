@@ -1,6 +1,8 @@
+/*
 import React, {useEffect, useState} from 'react';
 import ProductCard from "./ProductCard";
-import CatalogServices from "../../services/CatalogServices";
+import CatalogServices from "../services/CatalogServices";
+import ButtonCard from "./ButtonCard";
 
 const CatalogOnMainPage = () => {
     const [fishes, setFishes] = useState();
@@ -17,13 +19,16 @@ const CatalogOnMainPage = () => {
 
     },[])
     return (
-        <div className="CatalogOnMainPage">
-            <h2 className="catalogOnMainPage__title">catalogue</h2>
-            <div className="catalogOnMainPage__cards">
-                {fishes?.map((fish) => {
+        <div className="catalog">
+            <h2 className="catalog__title">catalogue</h2>
+            <div className="catalog__cards">
+                {fishes?.map((fish, i) => {
+                    if (i<7)
+                    return (
                         <ProductCard key={fish.id} card={fish}/>
-                    }
+                        )}
                 )}
+                <ButtonCard/>
             </div>
 
         </div>
@@ -31,3 +36,5 @@ const CatalogOnMainPage = () => {
 };
 
 export default CatalogOnMainPage;
+
+*/

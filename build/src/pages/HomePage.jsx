@@ -1,6 +1,6 @@
 import React from 'react';
 import "./pageStyles.scss"
-import CatalogOnMainPage from "../components/Catalog/CatalogOnMainPage";
+//import CatalogOnMainPage from "../components/Catalog/CatalogOnMainPage";
 
 const HomePage = () => {
     return (
@@ -17,7 +17,7 @@ const HomePage = () => {
                 </div>
 
             </div>
-            <CatalogOnMainPage/>
+            {/*<CatalogOnMainPage/>*/}
         </div>
     );
 };

@@ -1,10 +1,11 @@
+/*
 import React, {useEffect, useState} from 'react';
 import ProductCard from "./ProductCard";
-import CatalogServices from "../../services/CatalogServices";
+import "./catalogStyles.scss"
 
 const CatalogOnCatalogPage = () => {
     const [fishes, setFishes] = useState();
-    async function getCatalog(){
+    /!*async function getCatalog(){
         try {
             const response = await CatalogServices.fetchCatalog();
             setFishes(response.data);
@@ -15,11 +16,11 @@ const CatalogOnCatalogPage = () => {
     useEffect(()=> {
         getCatalog();
 
-    },[])
+    },[])*!/
     return (
-        <div className="CatalogOnCatalogPage">
-            <h2 className="CatalogOnCatalogPage__title">catalogue</h2>
-            <div className="CatalogOnCatalogPage__cards">
+        <div className="catalog">
+            <h2 className="catalog__title">catalogue</h2>
+            <div className="catalog__cards">
                 {fishes?.map(fish =>
                     <ProductCard key={fish.id} card={fish}/>
                 )}
@@ -29,4 +30,4 @@ const CatalogOnCatalogPage = () => {
     );
 };
 
-export default CatalogOnCatalogPage;
+export default CatalogOnCatalogPage;*/

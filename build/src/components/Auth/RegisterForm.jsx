@@ -1,7 +1,7 @@
+/*
 import React, {useRef, useState} from 'react';
 import "../componentsStyles.scss";
 import "../buttons/buttonsStyles.scss";
-import store from "../../services/AuthService";
 //import axios from "axios";
 
 const RegisterForm = () => {
@@ -45,7 +45,7 @@ const RegisterForm = () => {
 }
 
 export default RegisterForm;
-/*
+/!*
 class Form extends Component {
     constructor (props) {
         super(props);
@@ -170,12 +170,12 @@ class Form extends Component {
             </>
         )
     }
-}*/
+}*!/
 
 
 
 
-/*
+/!*
 
 
 
@@ -199,12 +199,12 @@ class Form extends Component {
             setPwd('');
             setSuccess(true);
         } else {
-            setErrMsg('Login Failed');
+            setErrMsg('Auth Failed');
         }
             errRef.current.focus();
         }
-            let res;*/
-/*if (success) {
+            let res;*!/
+/!*if (success) {
     res = data?.map((obj) => {
         return (
             <div key={obj.id}>
@@ -223,8 +223,8 @@ class Form extends Component {
             </div>
         )
     } )
-}*/
-/*
+}*!/
+/!*
     class Form extends Component {
     constructor (props) {
     super(props);
@@ -349,9 +349,9 @@ class Form extends Component {
     </>
     )
 }
-    }*/
+    }*!/
 
 
 
 
-//import { FormErrors } from './FormErrors';
+//import { FormErrors } from './FormErrors';*/

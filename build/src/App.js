@@ -2,19 +2,16 @@
 import {Route, Routes} from "react-router-dom";
 
 // navbar
-import "./Navbar"
-import Navbar from "./Navbar";
+import "./components/navbar/Navbar"
+import Navbar from "./components/navbar/Navbar";
 
 // pages
 import HomePage from "./pages/HomePage"
 import CartPage from "./pages/CartPage";
 import CatalogPage from "./pages/CatalogPage";
 
-//log/user page
-//import Dashboard from "./components/Dashboard/Dashboard";
-import Preferences from "./components/Preferences/Preferences";
-import RegisterPage from "./components/Login/RegisterPage";
-import LoginPage from "./components/Login/LoginPage";
+//import RegisterPage from "./components/Auth/RegisterPage";
+import LoginPage from "./components/Auth/LoginPage";
 
 function App() {
   return (
@@ -26,8 +23,6 @@ function App() {
             <Route path="/catalogPage" element={<CatalogPage />}/>
             <Route path="/cartPage" element={<CartPage />}/>
             <Route path="/logPage" element={<LoginPage />}/>
-            <Route path="/preferences" element={<Preferences />}/>
-            <Route path="/register" element={<RegisterPage/>}/>
           </Routes>
         </div>
       </div>

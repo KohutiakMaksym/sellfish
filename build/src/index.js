@@ -1,28 +1,18 @@
-import React, {createContext} from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom"
-import "./App.scss"
-import "./zero.scss"
-import Store from "./store/store";
-const store = new Store();
-
-export const Context = createContext({
-    store,
-})
+import "./styles/App.scss"
+import "./styles/zero.scss"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <React.StrictMode>
-        <Context.Provider value={{
-            store
-        }}>
             <BrowserRouter>
                 <App />
             </BrowserRouter>
-        </Context.Provider>
     </React.StrictMode>
 );
 
