@@ -196,3 +196,4 @@ C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\User\source\repos\SellfishPublish\sellfish1\api\SelfishBackendMySql\obj\Debug\net5.0\SelfishBackendMySql.csproj.CopyComplete

@@ -128,9 +128,9 @@ namespace AzureContext
                 entity.Property(e => e.FishWeight).HasColumnName("fish_weight");
 
                 entity.Property(e => e.ImageUrl)
-                                   .HasMaxLength(500)
-                                   .IsUnicode(false)
-                                   .HasColumnName("image_url");
+                    .HasMaxLength(500)
+                    .IsUnicode(false)
+                    .HasColumnName("image_url");
             });
 
             modelBuilder.Entity<Location>(entity =>
@@ -203,11 +203,16 @@ namespace AzureContext
                     .IsUnicode(false)
                     .HasColumnName("last_name");
 
-                entity.Property(e => e.Password)
+                entity.Property(e => e.PasswordHash)
                     .IsRequired()
-                    .HasMaxLength(255)
+                    .HasMaxLength(1000)
                     .IsUnicode(false)
-                    .HasColumnName("password");
+                    .HasColumnName("password_hash");
+
+                entity.Property(e => e.PasswordSalt)
+                    .HasMaxLength(1000)
+                    .IsUnicode(false)
+                    .HasColumnName("password_salt");
             });
 
             OnModelCreatingPartial(modelBuilder);

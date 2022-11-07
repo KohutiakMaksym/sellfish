@@ -31,8 +31,8 @@ namespace SelfishBackendMySql.Controllers
         public IActionResult Get()
         {
             try
-            {   
-                return Ok(_context.Users.ToArray());
+            {
+                return Ok(_userRepository.GetUsers()) ;
             }
             catch (Exception)
             {

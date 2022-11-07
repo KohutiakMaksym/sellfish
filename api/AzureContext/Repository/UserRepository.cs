@@ -19,8 +19,6 @@ namespace DataAccess.Repository
 
         public bool AddUser(User User)
         {
-
-
             _context.Users.Add(User);
             return Save();
         }
@@ -40,7 +38,6 @@ namespace DataAccess.Repository
         public bool Save()
         {
             var IsSaved = _context.SaveChanges();
-
             return IsSaved > 0 ? true : false;
         }
 
